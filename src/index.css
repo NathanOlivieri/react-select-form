@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*Make box model behave*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*styles input container only*/
+.input {
+  width: 80vw;
+  max-width: 340px;
+  margin: 4px 0;
+  box-shadow: 4px 4px 20px #55555520;
+  cursor: pointer;
+}
+
+.input > div {
+  min-height: 50px;
+}
+
+.input span {
+  display: none;
+  background: rgb(206, 206, 206);
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    max-width: 240px;
+    margin: 0 8px;
+  }
+}
+
